@@ -3,14 +3,14 @@
 /* Extra small  */
 @media screen and (max-width: 600px){
     .sidebar {
-        width: 70px;
+        width: 75px;
     }
     header {
-        width: calc(100% - 70px);
-        left: 70px;
+        width: calc(100% - 75px);
+        left: 75px;
     }
     .container {
-        width: calc(100% - 70px);
+        width: calc(100% - 75px);
 
     }
     .sidebar .to-none {
@@ -21,4 +21,11 @@
         display: block;
     }
 
+    a, .logo  {
+        padding: 0;
+    }
+    .home-l::before{
+        content: "";
+        border:none;
+    }
 }
