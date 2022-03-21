@@ -14,16 +14,33 @@ html {
     background-color: #151922;
 }
 .gray-color {
-    color: #797979;
+    color: #898989;
+}
+.none {
+    display: none;
+}
+ul {
+    list-style-type: none;
 }
 
+/* titoli */
+h5 {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 1000;
+    font-style: normal;
+
+}
+.margin-b-1 {
+    margin-bottom: 2rem;
+}
 /* HEADER */
 header {
     /* Position */
     position: fixed;
     top: 0;
-    left: 15%;
-    z-index: 10;
+    left: 200px;
+    /* z-index: 10; */
 
     display: flex;
     flex-direction: row-reverse;
@@ -32,7 +49,7 @@ header {
     background-color: rgba(0, 0, 0, 0.6);
     /* dimension */
     height: 90px;
-    width: 85%;
+    width: calc(100% - 200px);
 }
 /* buttion upgrade  */
 header .n-btn-big {
@@ -50,4 +67,78 @@ header .n-btn-big {
 /* hover  */
 header .n-btn-big:hover {
     transform: scale(1.1);
+}
+/* fine header  */
+
+
+/* MAIN  */
+main {
+    /* dimension */
+    height: calc(100vh - 90px);
+    /* Flex */
+    display: flex;
+
+}
+/* Sidebar */
+.sidebar {
+    /* color  */
+    background-color: black;
+    /* dimension  */
+    height: 100%;
+    width: 200px;
+    /* Padding */
+    padding: 1.1rem;
+}
+.sidebar a {
+    color: inherit;
+    text-decoration: none;
+}
+.sidebar section {
+    margin-bottom: 2rem;
+}
+.sidebar .logo {
+    height: 2rem;
+    cursor: pointer;
+}
+/* Lista  */
+.sidebar li {
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+}
+.sidebar ul img {
+    vertical-align: middle;
+    width: 1.5rem;
+    /* Grigio  */
+    filter: invert(61%) sepia(1%) saturate(61%) hue-rotate(314deg) brightness(88%) contrast(85%);
+}
+.sidebar li a span , .sidebar li i {
+    vertical-align: middle;
+}
+.sidebar li i {
+    font-size: 3rem;
+}
+.sidebar a:hover {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(200%) contrast(200%);
+
+}
+/* fine sidebar  */
+/* LAVORI IN CORSO */
+.container {
+    background-color: blue;
+    /* dimension */
+    height: 100%;
+    width: calc(100% - 200px);
+    /* responsive  */
+    overflow-y: auto;
+}
+/* fine  main */
+/* Footer */
+footer {
+    background-color: violet;
+    /* dimension  */
+    height: 90px;
+    width: 100%;
+    /* position / va sopra header per gestire la musica*/
+    position: relative;
+    z-index: 20;
 }

@@ -1,0 +1,24 @@
+
+
+/* Extra small  */
+@media screen and (max-width: 600px){
+    .sidebar {
+        width: 70px;
+    }
+    header {
+        width: calc(100% - 70px);
+        left: 70px;
+    }
+    .container {
+        width: calc(100% - 70px);
+
+    }
+    .sidebar .to-none {
+        display: none;
+    }
+
+    .sidebar .none {
+        display: block;
+    }
+
+}
