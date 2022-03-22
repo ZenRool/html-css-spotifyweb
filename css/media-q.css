@@ -1,7 +1,29 @@
 
+/* Small  */
+@media screen and (max-width: 699px){
 
+
+
+
+    /* Footer  */
+    footer .hf{
+        flex-direction: column;
+        
+    }
+    footer .heart {
+        margin-right: 0;
+    }
+    footer > div:first-of-type {
+        width: 175px;
+            
+    }
+
+
+
+}
 /* Extra small  */
 @media screen and (max-width: 600px){
+    /* SIDEBAR  */
     .sidebar {
         width: 75px;
     }
@@ -18,7 +40,7 @@
     }
 
     .sidebar .none {
-        display: block;
+        display: flex;
     }
 
     a, .logo  {
@@ -27,5 +49,11 @@
     .home-l::before{
         content: "";
         border:none;
+    }
+    /* fine sidebar  */
+    /* Footer  */
+    footer > div:first-of-type {
+        width: 150px;
+            
     }
 }
