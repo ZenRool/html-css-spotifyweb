@@ -1,6 +1,12 @@
-
+/* Middle */
+@media screen and (max-width: 1100px) {
+    /* Footer  */
+    .player {
+        width: 350px;
+    }    
+}
 /* Small  */
-@media screen and (max-width: 699px){
+@media screen and (max-width: 700px){
 
 
 
@@ -14,9 +20,12 @@
         margin-right: 0;
     }
     footer > div:first-of-type {
-        width: 175px;
+        width: 160px;
             
     }
+    .player {
+        width: 250px;
+    }    
 
 
 
@@ -53,7 +62,20 @@
     /* fine sidebar  */
     /* Footer  */
     footer > div:first-of-type {
-        width: 150px;
+        width: 130px;
             
     }
+    .player {
+        width: 200px;
+    }    
+}
+/* heigt  */
+@media screen and (max-height:443px) {
+
+    .top-side {
+
+        min-height: 300px;
+    
+    }
+    
 }
