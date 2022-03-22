@@ -353,36 +353,42 @@ footer .hf {
     cursor: pointer;
 }
 
-.time-bar {
+[class$="-bar"] {
     position: relative;
 
     height: 0;
-    /* provo 600px */
-    width: 90%;
+    
+    
 
     border: 2px solid #898989;
     border-radius: 2px;
 
     cursor: pointer;
 }
-.time-bar > div {
+.time-bar {
+    width: 90%;
+}
+[class$="-bar"] > div {
 
     position: absolute;
     height: 0;
     top: -2px;
     left: -2px;;
+    
+    border: 2px solid #bbb;
+    border-radius: 2px;
+    
+}
+.time-bar > div {
     /* 275(4minuti e 35)/25 = 11 */
     width: calc(100% /11);
 
-    border: 2px solid #bbb;
-    border-radius: 2px;
-
 }
 
-.time-bar:hover div {
+[class$="-bar"]:hover div {
     border-color: #0FFF3F;
 }
-.time-bar:hover div::after {
+[class$="-bar"]:hover div::after {
     content: "";
 
     position: absolute;
@@ -400,4 +406,17 @@ footer .hf {
 
     font-size: 0.8em;
     
+}
+
+footer > div:last-of-type {
+    width: 200px;
+}
+.volume-bar {
+    width: 45%;
+
+}
+.volume-bar > div {
+    /* 275(4minuti e 35)/25 = 11 */
+    width: 50%;
+
 }
