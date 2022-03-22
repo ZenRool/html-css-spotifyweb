@@ -12,6 +12,8 @@ html {
     /* color page  */
     color: white;
     background-color: #151922;
+
+    overflow: hidden;
 }
 .gray-color {
     color: #898989;
@@ -117,6 +119,7 @@ main {
     height: calc(100vh - 90px);
     /* Flex */
     display: flex;
+    overflow: hidden;
 
 }
 /* Sidebar */
@@ -127,24 +130,24 @@ main {
     height: 100%;
     width: 200px;
     /* Padding */
-    padding-top: 1.1rem;
+    
 
-    overflow-y: auto;
-    overflow-x: hidden;
+    overflow: hidden;
+    
 }
 .sidebar .none, .sidebar .to-none {
     height: 100%;
+    
+    overflow: hidden;
 }
 .to-none {
+    
     /* flex  */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    
 }
-.sidebar .none {
-    flex-direction: column;
-    justify-content: space-between;
-}
+
 
 .sidebar a {
     color: inherit;
@@ -153,6 +156,12 @@ main {
 }
 .sidebar section {
     margin-bottom: 1.5rem;
+    height: auto;
+
+}
+.sidebar .top-side section:last-child {
+    margin-bottom: 0;
+
 }
 .sidebar .logo {
     height: 2rem;
@@ -160,9 +169,24 @@ main {
     padding: 0 1.5rem;
 }
 /* Lista  */
+.sidebar .top-side section:last-child {
+    flex-grow: 1;
+    
+    
+}
+.sidebar .playlist {
+    overflow-y: auto;
+    height: 40vh;
+    
+    
+}
 .sidebar li {
     margin-bottom: 1rem;
     font-size: 0.8rem;
+}
+.sidebar li:last-of-type {
+    margin-bottom: 0;
+    
 }
 .sidebar ul img {
     vertical-align: middle;
@@ -193,8 +217,26 @@ main {
 
     border-left: 4px solid greenyellow;
 }
-/* Parte di sotto  */
+/* Parte di sopra  */
+.top-side {
+    padding-top: 1.1rem;
+    height: calc(100% - 110px);
+    min-height: 550px;
 
+    display: flex;
+    flex-direction: column;
+
+    /* debug */
+
+}
+/* Parte di sotto  */
+.bottom-side{
+    height: 110px;
+    
+    background-color: #151922;
+
+    overflow: hidden;
+}
 .bottom-side a img {
     margin-right: 0.5rem;
     height: 3rem;
