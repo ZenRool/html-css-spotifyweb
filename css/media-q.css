@@ -7,7 +7,18 @@
     /* Container  */
     .container-head ul {
         flex-wrap: wrap;
-    }    
+    }
+    .set {
+        flex-wrap: wrap;
+        justify-content: left;
+
+    }
+    .foto {
+        height: calc(100vw / 5 - 40px);
+        width: calc(100vw / 5 - 40px);
+        margin-right: 1vw;  
+    }
+
 }
 /* Small  */
 @media screen and (max-width: 700px){
@@ -33,7 +44,11 @@
     footer > div:last-of-type {
         width: 150px;
     }
-
+    .foto {
+        height: calc(100vw / 3 - 70px);
+        width: calc(100vw / 3 - 70px);
+        margin-right: 1.5vw;  
+    }
 
 
 
@@ -79,6 +94,14 @@
     footer > div:last-of-type {
         width: 120px;
     }
+
+
+    .foto {
+        height: calc(100vw / 2.6);
+        width: calc(100vw / 2.6);
+        margin-right: 2vw;  
+    }
+
 }
 /* heigt  */
 @media screen and (max-height:443px) {

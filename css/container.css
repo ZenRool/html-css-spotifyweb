@@ -26,16 +26,27 @@
     position: relative;
 }
 .container li:first-child::after {
-    
-
     content: "";
     position: absolute;
     transform: translate( -50% , 0);
     bottom: 0;
     left: 50%;
-
     height: 0;
     width: 35%;
     border: 1px solid greenyellow;
+}
+
+/* section */
+.container section {
+    margin: 1.5rem 0;
+    
+    background-color: red;
+}
+/* test */
+.foto {
+    height: calc(100vw / 7 - 30px);
+    width: calc(100vw / 7 - 30px);
+    background-color: purple;
+    margin-bottom: 30px;
 
 }
