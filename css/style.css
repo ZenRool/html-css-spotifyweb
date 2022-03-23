@@ -63,6 +63,9 @@ ul {
 .margin-b-05 {
     margin-bottom: 0.5rem;
 }
+.margin-b-15 {
+    margin-bottom: 1.5rem;
+}
 .margin-r-1 {
     margin-right: 1rem;
 }
@@ -86,6 +89,9 @@ h2 {
 /* h4 titolo della canzone  */
 h4 {
     color: white;
+}
+h3 {
+    text-align: center;
 }
 h5 {
     text-transform: uppercase;

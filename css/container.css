@@ -39,14 +39,45 @@
 /* section */
 .container section {
     margin: 1.5rem 0;
-    
-    background-color: red;
 }
-/* test */
-.foto {
+/* Albums */
+.song {
+    width: calc(100vw / 7 - 30px);
+    margin-bottom: 1rem;
+
+}
+.song p {
+    color: #898989;
+    font-size: 0.8rem;
+    text-align: center;
+}
+.album {
+    position: relative;
+    cursor: pointer;
     height: calc(100vw / 7 - 30px);
     width: calc(100vw / 7 - 30px);
-    background-color: purple;
-    margin-bottom: 30px;
+    margin-bottom: 0.5rem;
+
+}
+.album img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/* hover  */
+.album .none {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 3rem;
+}
+.album:hover .none{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
