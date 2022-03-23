@@ -3,6 +3,10 @@
     /* Footer  */
     .player {
         width: 350px;
+    }
+    /* Container  */
+    .container-head ul {
+        flex-wrap: wrap;
     }    
 }
 /* Small  */
@@ -31,19 +35,21 @@
     }
 
 
+
+
 }
 /* Extra small  */
 @media screen and (max-width: 600px){
     /* SIDEBAR  */
     .sidebar {
-        width: 75px;
+        width: 55px;
     }
     header {
-        width: calc(100% - 75px);
-        left: 75px;
+        width: calc(100% - 55px);
+        left: 55px;
     }
     .container {
-        width: calc(100% - 75px);
+        width: calc(100% - 55px);
 
     }
     .sidebar .to-none {
