@@ -3,7 +3,9 @@
     color: inherit;
     text-decoration: none;
 }
-
+.container section > p {
+    font-size: 0.9rem;
+}
 
 .container-head ul{
     text-transform: uppercase;
@@ -44,6 +46,7 @@
 .song {
     width: calc(100vw / 7 - 30px);
     margin-bottom: 1rem;
+    margin-right: 1.5vw;
 
 }
 .song p {
@@ -57,6 +60,10 @@
     height: calc(100vw / 7 - 30px);
     width: calc(100vw / 7 - 30px);
     margin-bottom: 0.5rem;
+
+}
+.container section:last-of-type .album ,.container section:last-of-type .album img, .container section:last-of-type .album .none {
+    border-radius: 50%;
 
 }
 .album img {
