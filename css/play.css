@@ -246,4 +246,16 @@ h1 {
     100% {
       transform: scaleY(0.6); /* scale down to 60% */
     }
-  }
+}
+/* overriding footer  */
+.time-bar > div {
+    /* 1minuto su 4 =25% */
+    width: 25%;
+
+}
+/* De André non può essere ascoltato a 50% */
+.volume-bar > div {
+    
+    width: calc(100% + 4px);
+
+}
