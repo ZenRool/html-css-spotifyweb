@@ -36,11 +36,24 @@ html {
 .just-sb {
     justify-content: space-between;
 }
+.just-start {
+    justify-content: flex-start;
+}
 .col {
     flex-direction: column;
 }
 ul {
     list-style-type: none;
+}
+.uncolor-btn {
+    border: 1px solid #898989;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+.uncolor-btn:hover {
+    border-color: white;
 }
 
 .gray-line {
