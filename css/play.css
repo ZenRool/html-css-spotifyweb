@@ -1,0 +1,50 @@
+.container {
+    padding: 0;
+}
+.container .container-b  {
+    padding: 20px;
+}
+.container-head {
+    background-image: url(../img/artista.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 400px;
+
+    padding: 1rem;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+
+
+    
+}
+h1 {
+    font-size: 5rem;
+}
+.artist-description {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.artist-description p {
+    font-size: 0.8rem;
+    vertical-align: middle;
+
+}
+.artist-description p span {
+    display: inline-block;
+    
+    background-image: url(../img/verificato.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1.5rem;
+    height: 1.5rem;
+    
+    text-align: center;
+    line-height: 1.5rem;
+
+
+}

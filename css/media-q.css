@@ -5,6 +5,9 @@
         width: 350px;
     }
     /* Container  */
+    h1 {
+        font-size: 3.5rem;
+    }
     .container-head ul {
         flex-wrap: wrap;
     }
