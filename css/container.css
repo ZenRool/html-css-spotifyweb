@@ -16,7 +16,7 @@
     color: white;
 
 }
-.container li{
+.container ul li{
     padding-bottom: 0.5em;
     font-size: 0.85rem;
     
@@ -24,10 +24,10 @@
     height: auto;
     width: auto;
 }
-.container li:first-child {
+.container ul li:first-child {
     position: relative;
 }
-.container li:first-child::after {
+.container ul li:first-child::after {
     content: "";
     position: absolute;
     transform: translate( -50% , 0);

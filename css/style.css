@@ -42,6 +42,9 @@ html {
 .col {
     flex-direction: column;
 }
+.wrap {
+    flex-wrap: wrap;
+}
 ul {
     list-style-type: none;
 }

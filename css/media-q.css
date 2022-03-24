@@ -26,6 +26,10 @@
         width: calc(100vw / 5 - 40px);
         height: calc(100vw / 5 - 40px);;      
     }
+    .popular {
+        width: 100%;
+
+    }
 
 }
 /* Small  */
